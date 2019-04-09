@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=YUPfBJz3I6Y
 
 Always fasten the nozzle when it's hot, and let the nozzle push the bowden tube back up.
 
-Update the values in ``Marlin/Configuration.h:608``. The stock setting is 93, I calibrated mine and came up with 98.
+Update the values in ``Marlin/Configuration.h``. The stock setting is 93, I calibrated mine and came up with 98.
 
 ```c++
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 98 }
