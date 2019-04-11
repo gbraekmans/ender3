@@ -8,6 +8,12 @@ What's here:
 - Slic3r Prusa Edition profiles
 - My gcode post processors
 
+## Using the Slic3r PE profiles
+
+1. Open SLic3r PE. If there's a wizard just click next through it, the setings will be overwritten anyway.
+2. Click on the upper menu on `Help` -> `Show configuration folder`
+3. Copy the directories under `Slic3r PE` to the configuration directory. Overwrite when prompted.
+
 The following steps should also be done to get better prints and a more enjoyable machine:
 
 ## Calibrate your extruder
@@ -53,7 +59,7 @@ Mainboard of Ender 3:
 
 Because of a lack of female-to-female jumper cables I used the pins on my Arduino Uno.
 
-## Post processors
+## Installing the post processors
 
 All of the post processors are written in Python. You should have at least Python 3.7.0 installed. And then the pyinstaller package should be installed on Windows:
 
