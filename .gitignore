@@ -1,2 +1,4 @@
 Slic3r_PE/filament/*
 !Slic3r_PE/filament/Generic*
+__pycache__
+post_processors/*.spec

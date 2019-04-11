@@ -6,6 +6,7 @@ What's here:
 
 - Marlin 1.1.9 configuration
 - Slic3r Prusa Edition profiles
+- My gcode post processors
 
 The following steps should also be done to get better prints and a more enjoyable machine:
 
@@ -51,3 +52,13 @@ Mainboard of Ender 3:
 ![](images/ender3_icsp_pinout.jpg)
 
 Because of a lack of female-to-female jumper cables I used the pins on my Arduino Uno.
+
+## Post processors
+
+All of the post processors are written in Python. You should have at least Python 3.7.0 installed. And then the pyinstaller package should be installed on Windows:
+
+```
+pip install pyinstaller
+```
+
+Then you can use `compile.bat` and  `install.bat` to create the post processor executables. (They are only tested on windows)
