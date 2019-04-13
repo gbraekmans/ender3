@@ -46,7 +46,7 @@ if __name__ == '__main__':
                     z_height = float(match.group(1))
                     z_layer = int(match.group(2)) + 1
                     percent = round(z_layer / layercount * 100, 1)
-                    dest.write(f"M117 Layer {z_layer}/{layercount} ({percent}%) {z_height}mm\n")  # noqa: E501
+                    dest.write(f"M117 {z_layer}/{layercount} ({percent}%) {z_height}mm\n")  # noqa: E501
                 dest.write(line)
 
     # Delete backup
