@@ -1,10 +1,12 @@
 #!/bin/bash
 
+slicerhome=slic3rpe-beta # or just slic3rpe
+
 winhome=$(echo "$1" | sed 's|\\|/|g' | sed -r 's/(.)\:/\1/')
 githome=$(echo $(dirname $0) | sed 's|\\|/|g' | sed -r 's/(.)\:/\1/')
 
 (
-    cd  "/cygdrive/$winhome/appdata/roaming/slic3rpe/"
+    cd  "/cygdrive/$winhome/appdata/roaming/$slicerhome/"
     cp -Rv filament print printer "/cygdrive/$githome/Slic3r_PE"
 )
 
